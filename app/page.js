@@ -4,8 +4,8 @@
 import { useState, useEffect } from "react";
 
 // Components
-import ImagePicker from "@/components/ImagePicker";
-import ColorPicker from "@/components/ColorPicker";
+import Image from "@components/Image";
+import Color from "@components/Color";
 
 export default function Home() {
     // States
@@ -35,9 +35,9 @@ export default function Home() {
 
     return (
         <main>
-            {showImagePicker && <ImagePicker setImage={setImage} />}
+            {showImagePicker && <Image setImage={setImage} />}
             {showColorPicker && (
-                <ColorPicker image={image} color={color} setColor={setColor} />
+                <Color image={image} color={color} setColor={setColor} />
             )}
         </main>
     );

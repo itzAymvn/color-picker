@@ -1,10 +1,10 @@
 "use client";
 
 // Style
-import "@/styles/ColorPicker.css";
+import "@styles/Color.css";
 import { useEffect } from "react";
 
-const ColorPicker = ({ image, color, setColor }) => {
+const Color = ({ image, color, setColor }) => {
     useEffect(() => {
         window.scrollTo({
             top: document.body.scrollHeight,
@@ -72,4 +72,4 @@ const ColorPicker = ({ image, color, setColor }) => {
     );
 };
 
-export default ColorPicker;
+export default Color;

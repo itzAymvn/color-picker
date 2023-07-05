@@ -1,7 +1,7 @@
 // Style
-import "@/styles/ImagePicker.css";
+import "@styles/Image.css";
 
-const ImagePicker = ({ setImage }) => {
+const Image = ({ setImage }) => {
     return (
         <div className="image-picker">
             <label className="custum-file-upload" htmlFor="file">
@@ -43,4 +43,4 @@ const ImagePicker = ({ setImage }) => {
     );
 };
 
-export default ImagePicker;
+export default Image;
